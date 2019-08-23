@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Webmail - Universitas Muhammadiyah Sukabumi</title>
+
+    <!--- Site CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/semantic.min.css">
+
+    <!--- Example CSS -->
+    <style>
+        body {
+            padding: 1em;
+            min-height: 100%;
+        }
+        .ui.menu {
+            margin: 3em 0em;
+        }
+        .ui.menu:last-child {
+            margin-bottom: 110px;
+        }
+        .ui.footer.segment {
+            margin: 3em 0em 1em;
+            padding: 1em 0em;
+        }
+    </style>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui blue inverted pointing stackable menu">
+            <div class="header item"><h2>Webmail UMMI</h2></div>
+            <a href="index.html" class="item">Beranda</a>
+            <a href="dosen-login.html" class="item">Dosen</a>
+            <a href="staff-login.html" class="item">Staff</a>
+            <a href="mahasiswa-login.html" class="item">Mahasiswa</a>
+            <a href="aturan.html" class="item">Aturan Pengguna</a>
+            <a href="gabungkan.html" class="item">Gabungkan Email</a>
+            <a href="faq.html" class="item">FAQ</a>
+            <!-- <a class="item">Home</a>
+            <a class="item">Pendaftaran</a>
+            <a class="item">Reset Password</a> -->
+            <div class="right menu">
+                <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
+            </div>
+    </div>
+    <div class="ui stackable grid center aligned">
+            <div class="six wide column">
+                    <div class="ui segment blue center aligned">
+                        <div class="ui icon header">
+                            Login Dosen UMMI
+                        </div>
+                        <div class="inline">
+                            <p>Gunakan Akun SIAK untuk Login</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="ui stackable grid center aligned">
+            <div class="six wide column">
+                <form class="ui form" action="index.html">
+                    <div class="ui segment">
+                        <div class="field">
+                            <label>Kode Dosen</label>
+                            <div class="ui labeled icon input">
+                                <input type="text" name="email" placeholder="Kode Dosen">
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui labeled icon input">
+                                <input type="password" name="password" placeholder="Password">
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="ui fluid large blue submit button"><i class="sign in icon"></i>Login</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+<div class="ui container">
+    <div class="ui vertical footer segment">
+            <div class="ui inverted section divider"></div>
+        <div class="ui container">
+            <p>Copyright &copy; 2019 - ICT UMMI</p>
+        </div>
+    </div>
+</div>
+</body>
+
+  <!--- Libs -->
+  <script src="../assets/js/jquery.min.js"></script>
+
+    <!--- Component JS -->
+    <script type="text/javascript" src="../assets/js/semantic.min.js"></script>
+    <!--- Example Javascript -->
+    <script>
+        $(document).ready(function()
+        {
+            $('.card, #img-link').each(function()
+            {
+                $(this).popup(
+                {
+                    on        : 'hover',
+                    variation : 'small',
+                    exclusive : true,
+                    content   : $(this).attr('class')
+                });
+            });
+        });
+    </script>
+</html>
