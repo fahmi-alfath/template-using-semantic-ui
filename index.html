@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Central Authentication Service - Universitas Muhammadiyah Sukabumi</title>
+
+  <!--- Site CSS -->
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="components/hamburger.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!--- Example CSS -->
+  <style>
+  body {
+    padding: 1em;
+  }
+  .ui.menu {
+    margin: 3em 0em;
+  }
+  .ui.menu:last-child {
+    margin-bottom: 110px;
+  }
+  .item > .fa {
+      margin-right: 1em;
+  }
+  .ui.footer.segment {
+    margin: 3em 0em 1em;
+    padding: 1em 0em;
+  }
+  </style>
+</head>
+<body>
+
+<div class="ui blue inverted fixed stackable menu">
+        <div class="header item"><h2>CAS UMMI</h2></div>
+        <div class="right menu">
+            <a class="item"><i class="fa fa-user-circle"></i> My Account</a>
+            <a class="item"><i class="fa fa-sign-out"></i>Logout</a>
+        </div>
+        <div class="hamburger">
+            <span class="hamburger-bun"></span>
+            <span class="hamburger-patty"></span>
+            <span class="hamburger-bun"></span>
+        </div>
+</div>
+<div class="ui container" style="margin-top: 5em;">
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            <div class="ui message" style="text-align: center;">
+                <h2>Selamat Datang FAHMI ALFATH, di Central Authentication Service ( CAS )</h2>
+                <p>Dari sini anda bisa mengakses berbagai macam website dan sistem tanpa perlu login kembali.</p>
+            </div>
+            <div class="ui info icon message">
+                <i class="info circle icon"></i>
+                <div class="content">
+                      <h3 class="header">Kebijakan Situs</h3>
+                      <p>Situs ini menggunakan cookie untuk kemudahan pengguna.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui container">
+    <div class="ui stackable grid">
+        <div class="four wide column">
+            <div class="ui card blue" data-position="top center" data-content="Menuju Situs SIAK">
+                <a href="#">
+                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                        <i class="fa fa-user fa-5x"></i>
+                        <h3>SIAK MAHASISWA</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Pendaftaran WI-FI">
+                <a href="#">
+                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                        <i class="fa fa-wifi fa-5x"></i>
+                        <h3>PENDAFTARAN WI-FI</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Pendaftaran E-Mail">
+                <a href="#">
+                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                        <i class="fa fa-envelope fa-5x"></i>
+                        <h3>PENDAFTARAN E-MAIL</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Mentoring BTQ">
+                <a href="#">
+                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                        <i class="fa fa-users fa-5x"></i>
+                        <h3>MENTORING BTQ</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="four wide column">
+            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Katalog Buku">
+                <a href="#">
+                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                        <i class="fa fa-book fa-5x"></i>
+                        <h3>KATALOG BUKU</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui container">
+    <div class="ui vertical footer segment">
+            <div class="ui inverted section divider"></div>
+        <div class="ui center aligned container">
+            <p>Copyright &copy; 2019 - ICT UMMI</p>
+        </div>
+    </div>
+</div>
+</body>
+
+  <!--- Libs -->
+  <script src="library/jquery.min.js"></script>
+
+    <!--- Component JS -->
+    <script type="text/javascript" src="semantic.min.js"></script>
+    <script type="text/javascript" src="components/popup.js"></script>
+    <script type="text/javascript" src="components/hamburger.js"></script>
+    <script type="text/javascript" src="components/dimmer.js"></script>
+    <script type="text/javascript" src="components/transition.js"></script>
+    <script type="text/javascript" src="components/dropdown.js"></script>
+    <!--- Example Javascript -->
+    <script>
+        $(document).ready(function()
+        {
+            $('.card').each(function()
+            {
+                $(this).popup(
+                {
+                    on        : 'hover',
+                    variation : 'small',
+                    exclusive : true,
+                    content   : $(this).attr('class')
+                });
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Central Authentication Service - Universitas Muhammadiyah Sukabumi</title>
+
+  <!--- Site CSS -->
+  <link rel="stylesheet" type="text/css" href="semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="components/hamburger.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!--- Example CSS -->
+    <style>
+        body {
+            padding: 1em;
+        }
+        body > .grid {
+            height: 100%;
+        }
+        .ui.menu {
+            margin: 3em 0em;
+        }
+        .ui.menu:last-child {
+            margin-bottom: 110px;
+        }
+        .item > .fa {
+            margin-right: 1em;
+        }
+        .ui.footer.segment {
+            margin: 3em 0em 1em;
+            padding: 1em 0em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ui blue inverted fixed stackable menu">
+        <div class="header item"><h2>CAS UMMI</h2></div>
+</div>
+<div class="ui middle aligned center aligned grid">
+        <div class="ui container" style="margin-top: 5em;">
+            <div class="ui stackable grid center aligned">
+                <div class="six wide column">
+                    <div class="ui message" style="text-align: center;">
+                        <h2>Central Authentication Service <br/> UMMI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="ui stackable grid center aligned">
+                <div class="six wide column">
+                    <form class="ui large form" action="index.html">
+                        <div class="ui stacked segment">
+                            <div class="field">
+                                <div class="ui labeled icon input">
+                                    <input type="text" name="email" placeholder="Nomor Induk Mahasiswa">
+                                    <i class="user icon"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui labeled icon input">
+                                    <input type="password" name="password" placeholder="Password">
+                                    <i class="lock icon"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="ui fluid large blue submit button">Login</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+
+  <!--- Libs -->
+  <script src="library/jquery.min.js"></script>
+
+    <!--- Component JS -->
+    <script type="text/javascript" src="semantic.min.js"></script>
+    <script type="text/javascript" src="components/popup.js"></script>
+    <script type="text/javascript" src="components/hamburger.js"></script>
+    <script type="text/javascript" src="components/dimmer.js"></script>
+    <script type="text/javascript" src="components/transition.js"></script>
+    <script type="text/javascript" src="components/dropdown.js"></script>
+    <!--- Example Javascript -->
+    <script>
+        $(document).ready(function()
+        {
+            $('.card').each(function()
+            {
+                $(this).popup(
+                {
+                    on        : 'hover',
+                    variation : 'small',
+                    exclusive : true,
+                    content   : $(this).attr('class')
+                });
+            });
+        });
+    </script>
+</html>
