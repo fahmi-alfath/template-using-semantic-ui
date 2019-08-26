@@ -9,133 +9,146 @@
 
   <!--- Site CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
   <!--- Example CSS -->
   <style>
-  body {
-    padding: 1em;
-  }
-  .ui.menu {
-    margin: 3em 0em;
-  }
-  .ui.menu:last-child {
-    margin-bottom: 110px;
-  }
-  .ui.footer.segment {
-    margin: 3em 0em 1em;
-    padding: 1em 0em;
-  }
+    .main.container {
+        margin-top: 5em;
+    }
+    .ui.menu {
+        margin: 3em 0em;
+    }
+    .ui.menu:last-child {
+        margin-bottom: 110px;
+    }
+    .ui.footer.segment {
+        margin: 3em 0em 1em;
+        padding: 1em 0em;
+    }
   </style>
 </head>
 <body>
-<div class="ui container">
-    <div class="ui blue inverted pointing stackable menu">
+    <div class="ui vertical inverted blue sidebar menu">
             <div class="header item"><h2>CAS UMMI</h2></div>
-            <div class="right menu">
-                <a class="item"><i class="user circle icon"></i> My Account</a>
-                <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
-            </div>
+            <a class="item"><i class="user circle icon"></i> My Account</a>
+            <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
     </div>
-    <div class="ui grid">
-        <div class="sixteen wide column">
-            <div class="ui segment center aligned">
-                    <div class="ui icon header">
-                        Selamat Datang FAHMI ALFATH, di Central Authentication Service ( CAS )
+    <div class="pusher">
+            <div class="ui main container">
+                    <div class="ui fixed mobile hidden blue inverted pointing stackable menu">
+                        <div class="ui container">
+                                <div class="header item"><h2>CAS UMMI</h2></div>
+                                <div class="right menu">
+                                    <a class="item"><i class="user circle icon"></i> My Account</a>
+                                    <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
+                                </div>
+                        </div>
                     </div>
-                    <div class="inline">
-                        <p>Dari sini anda bisa mengakses berbagai macam website dan sistem tanpa perlu login kembali.</p>
+                    <div class="ui fixed blue inverted pointing stackable menu mobile only">
+                        <div class="header item"><h2>CAS UMMI</h2></div>
+                        <a href="#" class="item sidebar-show"><i class="bars icon"></i> Menu</a>
                     </div>
-            </div>
-            <div class="ui info icon message">
-                <i class="info circle icon"></i>
-                <i class="close icon"></i>
-                <div class="content">
-                    <h3 class="header">Kebijakan Situs</h3>
-                    <p>Situs ini menggunakan cookie untuk kemudahan pengguna.</p>
+                    <div class="ui grid">
+                        <div class="sixteen wide column">
+                            <div class="ui segment center aligned">
+                                    <div class="ui icon header">
+                                        Selamat Datang FAHMI ALFATH, di Central Authentication Service ( CAS )
+                                    </div>
+                                    <div class="inline">
+                                        <p>Dari sini anda bisa mengakses berbagai macam website dan sistem tanpa perlu login kembali.</p>
+                                    </div>
+                            </div>
+                            <div class="ui info icon message">
+                                <i class="info circle icon"></i>
+                                <i class="close icon"></i>
+                                <div class="content">
+                                    <h3 class="header">Kebijakan Situs</h3>
+                                    <p>Situs ini menggunakan cookie untuk kemudahan pengguna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="ui container">
+                    <div class="ui stackable grid">
+                        <div class="four wide column">
+                            <div class="ui card blue centered" data-position="top center" data-content="Menuju Situs SIAK">
+                                <a href="#">
+                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                        <i class="user icon massive"></i>
+                                    </div>
+                                    <div class="extra content">
+                                            <a class="right floated created"><i class="arrow right icon"></i></a>
+                                            <a class="friends">SIAK MAHASISWA</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui card blue centered" data-position="top center" data-content="Menuju Situs Pendaftaran WI-FI">
+                                <a href="#">
+                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                        <i class="wifi icon massive"></i>
+                                    </div>
+                                    <div class="extra content">
+                                            <a class="right floated created"><i class="arrow right icon"></i></a>
+                                            <a class="friends">PENDAFTARAN WI-FI</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui card blue centered" data-position="top center" data-content="Menuju Situs Pendaftaran E-Mail">
+                                <a href="#">
+                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                        <i class="envelope icon massive"></i>
+                                    </div>
+                                    <div class="extra content">
+                                            <a class="right floated created"><i class="arrow right icon"></i></a>
+                                            <a class="friends">PENDAFTARAN E-MAIL</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui card blue centered" data-position="top center" data-content="Menuju Situs Mentoring BTQ">
+                                <a href="#">
+                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                        <i class="users icon massive"></i>
+                                    </div>
+                                    <div class="extra content">
+                                            <a class="right floated created"><i class="arrow right icon"></i></a>
+                                            <a class="friends">MENTORING BTQ</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui card blue centered" data-position="top center" data-content="Menuju Situs Katalog Buku">
+                                <a href="#">
+                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                        <i class="book icon massive"></i>
+                                    </div>
+                                    <div class="extra content">
+                                            <a class="right floated created"><i class="arrow right icon"></i></a>
+                                            <a class="friends">KATALOG BUKU</a>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui container">
+                    <div class="ui vertical footer segment">
+                            <div class="ui inverted section divider"></div>
+                        <div class="ui container">
+                            <p>Copyright &copy; 2019 - ICT UMMI</p>
+                        </div>
+                    </div>
+                </div>
     </div>
-</div>
-<div class="ui container">
-    <div class="ui stackable grid">
-        <div class="four wide column">
-            <div class="ui card blue" data-position="top center" data-content="Menuju Situs SIAK">
-                <a href="#">
-                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                        <i class="user icon massive"></i>
-                    </div>
-                    <div class="extra content">
-                            <a class="right floated created"><i class="arrow right icon"></i></a>
-                            <a class="friends">SIAK MAHASISWA</a>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="four wide column">
-            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Pendaftaran WI-FI">
-                <a href="#">
-                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                        <i class="wifi icon massive"></i>
-                    </div>
-                    <div class="extra content">
-                            <a class="right floated created"><i class="arrow right icon"></i></a>
-                            <a class="friends">PENDAFTARAN WI-FI</a>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="four wide column">
-            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Pendaftaran E-Mail">
-                <a href="#">
-                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                        <i class="envelope icon massive"></i>
-                    </div>
-                    <div class="extra content">
-                            <a class="right floated created"><i class="arrow right icon"></i></a>
-                            <a class="friends">PENDAFTARAN E-MAIL</a>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="four wide column">
-            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Mentoring BTQ">
-                <a href="#">
-                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                        <i class="users icon massive"></i>
-                    </div>
-                    <div class="extra content">
-                            <a class="right floated created"><i class="arrow right icon"></i></a>
-                            <a class="friends">MENTORING BTQ</a>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="four wide column">
-            <div class="ui card blue" data-position="top center" data-content="Menuju Situs Katalog Buku">
-                <a href="#">
-                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                        <i class="book icon massive"></i>
-                    </div>
-                    <div class="extra content">
-                            <a class="right floated created"><i class="arrow right icon"></i></a>
-                            <a class="friends">KATALOG BUKU</a>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="ui container">
-    <div class="ui vertical footer segment">
-            <div class="ui inverted section divider"></div>
-        <div class="ui container">
-            <p>Copyright &copy; 2019 - ICT UMMI</p>
-        </div>
-    </div>
-</div>
 </body>
-
   <!--- Libs -->
   <script src="assets/js/jquery.min.js"></script>
 
@@ -145,6 +158,10 @@
     <script>
         $(document).ready(function()
         {
+            $('.ui.sidebar').sidebar({
+                context: $('body'),
+                transition: 'overlay'
+            }).sidebar('attach events', '.sidebar-show');
             $('.card').each(function()
             {
                 $(this).popup(

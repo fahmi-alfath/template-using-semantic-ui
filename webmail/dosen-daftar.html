@@ -25,7 +25,6 @@
         <a href="faq.html" class="item">FAQ</a>
 </div>
 <div class="pusher">
-        <!-- <div class="ui main container"> -->
         <div class="ui main container">
             <div class="ui fixed mobile hidden blue inverted pointing stackable menu">
                 <div class="ui container">
@@ -46,40 +45,41 @@
                 <div class="header item"><h2>Webmail UMMI</h2></div>
                 <a href="#" class="item sidebar-show"><i class="bars icon"></i> Menu</a>
             </div>
-            <div class="ui stackable grid center aligned">
-                <div class="six wide column">
-                    <div class="ui segment blue center aligned">
-                        <div class="ui icon header">
-                            Login Dosen UMMI
-                        </div>
-                        <div class="inline">
-                            <p>Gunakan Akun SIAK untuk Login</p>
+            <div class="ui stackable grid">
+                    <div class="six wide column centered">
+                        <div class="ui segment blue center aligned">
+                            <div class="ui header">
+                                    Form Pendaftaran Email Mahasiswa UMMI 
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="ui stackable grid center aligned">
-                <div class="six wide column">
-                    <form class="ui form" action="dosen-home.html">
-                        <div class="ui segment">
-                            <div class="field">
-                                <label>Kode Dosen</label>
-                                <div class="ui labeled icon input">
-                                    <input type="text" name="email" placeholder="Kode Dosen">
-                                    <i class="user icon"></i>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label>Password</label>
-                                <div class="ui labeled icon input">
-                                    <input type="password" name="password" placeholder="Password">
-                                    <i class="lock icon"></i>
-                                </div>
-                            </div>
-                            <button type="submit" class="ui fluid large blue submit button"><i class="sign in icon"></i>Login</button>
+            <div class="ui stackable grid">
+                    <div class="six wide column centered">
+                        <div class="ui segment blue">
+                            <form class="ui form" action="dosen-home.html">
+                                    <div class="field">
+                                        <label>Email yang diajukan</label>
+                                        <div class="ui right labeled input">
+                                            <input type="text" name="email" placeholder="Email UMMI">
+                                            <div class="ui basic label" style="padding-left: 2em;padding-right: 2em;">
+                                                @ummi.ac.id
+                                            </div>
+                                        </div>
+                                        <small>*Masukan nama anda diikuti dengan dua digit NIDN terakhir anda, contoh : <b>ruswan53@ummi.ac.id</b></small>
+                                    </div>
+                                    <div class="field">
+                                        <label>Email untuk verifikasi</label>
+                                        <div class="ui input">
+                                            <input type="email" name="email" placeholder="Email Verifikasi">
+                                        </div>
+                                        <small>*Masukan email yang selama ini sering anda gunakan, contoh : <b>kangruswan@gmail.com</b> </small>
+                                    </div>
+                                    <button type="submit" class="ui blue submit button"><i class="send icon"></i>Kirim</button>
+                                    <button type="reset" class="ui default submit button"><i class="refresh icon"></i>Reset</button>
+                            </form>
                         </div>
-                    </form>
-                </div>
+                    </div>
             </div>
         </div>
         <div class="ui vertical footer segment">

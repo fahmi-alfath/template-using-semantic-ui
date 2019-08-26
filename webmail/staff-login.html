@@ -6,49 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Webmail - Universitas Muhammadiyah Sukabumi</title>
 
+    <link rel="icon" href="http://localhost/webmail/assets/images/ico/favicon.ico">
+
     <!--- Site CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/semantic.min.css">
-
-    <!--- Example CSS -->
-    <style>
-        body {
-            padding: 1em;
-            min-height: 100%;
-        }
-        .ui.menu {
-            margin: 3em 0em;
-        }
-        .ui.menu:last-child {
-            margin-bottom: 110px;
-        }
-        .ui.footer.segment {
-            margin: 3em 0em 1em;
-            padding: 1em 0em;
-        }
-        .field label, .field small {
-            text-align: left !important;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+    
 </head>
 <body>
-<div class="ui container">
-    <div class="ui blue inverted pointing stackable menu">
-            <div class="header item"><h2>Webmail UMMI</h2></div>
-            <a href="index.html" class="item">Beranda</a>
-            <a href="dosen-login.html" class="item">Dosen</a>
-            <a href="staff-login.html" class="item">Staff</a>
-            <a href="mahasiswa-login.html" class="item">Mahasiswa</a>
-            <a href="aturan.html" class="item">Aturan Pengguna</a>
-            <a href="gabungkan.html" class="item">Gabungkan Email</a>
-            <a href="faq.html" class="item">FAQ</a>
-            <!-- <a class="item">Home</a>
-            <a class="item">Pendaftaran</a>
-            <a class="item">Reset Password</a> -->
-            <div class="right menu">
-                <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
+<div class="ui vertical inverted blue sidebar menu mobile only">
+    <div class="header item"><h2>Webmail UMMI</h2></div>
+    <a href="index.html" class="item">Beranda</a>
+    <a href="dosen-login.html" class="item">Dosen</a>
+    <a href="staff-login.html" class="item">Staff</a>
+    <a href="mahasiswa-login.html" class="item">Mahasiswa</a>
+    <a href="aturan.html" class="item">Aturan Pengguna</a>
+    <a href="gabungkan.html" class="item">Gabungkan Email</a>
+    <a href="faq.html" class="item">FAQ</a>
+</div>
+<div class="pusher">
+    <div class="ui main container">
+        <div class="ui fixed mobile hidden blue inverted pointing stackable menu">
+            <div class="ui container">
+                <div class="header item"><h2>Webmail UMMI</h2></div>
+                <a href="index.html" class="item">Beranda</a>
+                <a href="dosen-login.html" class="item">Dosen</a>
+                <a href="staff-login.html" class="item">Staff</a>
+                <a href="mahasiswa-login.html" class="item">Mahasiswa</a>
+                <a href="aturan.html" class="item">Aturan Pengguna</a>
+                <a href="gabungkan.html" class="item">Gabungkan Email</a>
+                <a href="faq.html" class="item">FAQ</a>
+                <div class="right menu">
+                    <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
+                </div>
             </div>
-    </div>
-    <div class="ui stackable grid center aligned">
+        </div>
+        <div class="ui fixed blue inverted pointing stackable menu mobile only">
+            <div class="header item"><h2>Webmail UMMI</h2></div>
+            <a href="#" class="item sidebar-show"><i class="bars icon"></i> Menu</a>
+        </div>
+        <div class="ui stackable grid center aligned">
             <div class="six wide column">
                     <div class="ui segment blue center aligned">
                         <div class="ui header">
@@ -81,14 +78,14 @@
                                     @ummi.ac.id
                                 </div>
                             </div>
-                            <small>*Masukan nama anda diikuti dengan dua digit NIDN terakhir anda, contoh : ruswan53@ummi.ac.id</small>
+                            <small>*Masukan nama anda diikuti dengan dua digit NIDN terakhir anda, contoh : <b>ruswan53@ummi.ac.id</b></small>
                         </div>
                         <div class="field">
                             <label>Email untuk verifikasi</label>
                             <div class="ui input">
                                 <input type="email" name="email" placeholder="Email Verifikasi">
                             </div>
-                            <small>*Masukan email yang selama ini sering anda gunakan, contoh : kangruswan@gmail.com </small>
+                            <small>*Masukan email yang selama ini sering anda gunakan, contoh : <b>kangruswan@gmail.com</b> </small>
                         </div>
                         <button type="submit" class="ui large blue submit button"><i class="send icon"></i>Kirim</button>
                         <button type="reset" class="ui large submit button"><i class="refresh icon"></i>Reset</button>
@@ -96,36 +93,36 @@
                 </form>
             </div>
         </div>
-</div>
-<div class="ui container">
+    </div>
     <div class="ui vertical footer segment">
-            <div class="ui inverted section divider"></div>
         <div class="ui container">
             <p>Copyright &copy; 2019 - ICT UMMI</p>
         </div>
     </div>
 </div>
-</body>
-
-  <!--- Libs -->
-  <script src="../assets/js/jquery.min.js"></script>
-
-    <!--- Component JS -->
-    <script type="text/javascript" src="../assets/js/semantic.min.js"></script>
-    <!--- Example Javascript -->
-    <script>
-        $(document).ready(function()
+<!--- Libs -->
+<script src="../assets/js/jquery.min.js"></script>
+<!--- Component JS -->
+<script type="text/javascript" src="../assets/js/semantic.min.js"></script>
+<!--- Example Javascript -->
+<script>
+    $(document).ready(function()
+    {
+        $('.ui.sidebar').sidebar({
+            context: $('body'),
+            transition: 'overlay'
+        }).sidebar('attach events', '.sidebar-show');
+        $('.card, #img-link').each(function()
         {
-            $('.card, #img-link').each(function()
+            $(this).popup(
             {
-                $(this).popup(
-                {
-                    on        : 'hover',
-                    variation : 'small',
-                    exclusive : true,
-                    content   : $(this).attr('class')
-                });
+                on        : 'hover',
+                variation : 'small',
+                exclusive : true,
+                content   : $(this).attr('class')
             });
         });
-    </script>
+    });
+</script>
+</body>
 </html>
