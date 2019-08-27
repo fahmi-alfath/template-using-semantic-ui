@@ -9,17 +9,15 @@
     <link rel="icon" href="http://localhost/webmail/assets/images/ico/favicon.ico">
 
     <!--- Site CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
 
 </head>
 <body>
 <div class="ui vertical inverted blue sidebar menu mobile only">
         <div class="header item"><h2>Webmail UMMI</h2></div>
-        <a href="index.html" class="item">Beranda</a>
-        <a href="aturan.html" class="item">Aturan Pengguna</a>
-        <a href="gabungkan.html" class="item">Gabungkan Email</a>
-        <a href="faq.html" class="item">FAQ</a>
+        <a href="index.html" class="item active">Pendaftar</a>
+        <a href="aturan.html" class="item">Perubahan</a>
 </div>
 <div class="pusher">
         <!-- <div class="ui main container"> -->
@@ -27,10 +25,8 @@
             <div class="ui fixed mobile hidden blue inverted stackable menu">
                 <div class="ui container">
                     <div class="header item"><h2>Webmail UMMI</h2></div>
-                    <a href="index.html" class="item">Beranda</a>
-                    <a href="aturan.html" class="item">Aturan Pengguna</a>
-                    <a href="gabungkan.html" class="item">Gabungkan Email</a>
-                    <a href="faq.html" class="item">FAQ</a>
+                    <a href="index.html" class="item active">Pendaftar</a>
+                    <a href="aturan.html" class="item">Perubahan</a>
                     <div class="right menu">
                         <a href="login.html" class="item"><i class="power off icon"></i>Logout</a>
                     </div>
@@ -44,33 +40,35 @@
                 <div class="six wide column">
                     <div class="ui segment blue">
                         <div class="ui large header center aligned">
-                            Login Dosen UMMI <br>
-                        </div>
-                        <div class="inline">
-                            <center><label>Gunakan akun SIAK untuk Login</label></center>
+                            Edit Email Pendaftar
                         </div>
                     </div>
                 </div>
             </div>
             <div class="ui stackable grid centered">
                 <div class="six wide column">
-                    <form class="ui form" action="dosen-home.html">
+                    <form class="ui form" action="index.html">
                         <div class="ui segment">
                             <div class="field">
-                                <label>Kode Dosen</label>
-                                <div class="ui labeled icon input">
-                                    <input type="text" name="email" placeholder="Kode Dosen" required autofocus>
-                                    <i class="user icon"></i>
+                                <label>Nomor Induk</label>
+                                <div class="ui labeled input">
+                                    <input type="text" name="email" placeholder="Kode Dosen" readonly value="101107011">
                                 </div>
                             </div>
                             <div class="field">
-                                <label>Password</label>
-                                <div class="ui labeled icon input">
-                                    <input type="password" name="password" placeholder="Password" required>
-                                    <i class="lock icon"></i>
+                                <label>Nama Pendaftar</label>
+                                <div class="ui labeled input">
+                                    <input type="text" name="email" placeholder="Kode Dosen" readonly value="Fahmi Alfath">
                                 </div>
                             </div>
-                            <button type="submit" class="ui fluid large blue submit button"><i class="sign in icon"></i>Login</button>
+                            <div class="field">
+                                <label>Email yang diajukan</label>
+                                <div class="ui labeled input">
+                                    <input type="email" name="password" placeholder="Password">
+                                </div>
+                            </div>
+                            <button type="submit" class="ui blue button"><i class="save icon"></i>Simpan</button>
+                            <button type="submit" class="ui button"><i class="refresh icon"></i>Reset</button>
                         </div>
                     </form>
                 </div>
@@ -84,10 +82,10 @@
         </div>
 </div>
     <!--- Libs -->
-    <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
 
     <!--- Component JS -->
-    <script type="text/javascript" src="../assets/js/semantic.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/semantic.min.js"></script>
     <!--- Example Javascript -->
     <script>
         $(document).ready(function()
