@@ -13,50 +13,44 @@
   <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
 
 </head>
+<style>
+    body > .grid {
+      height: 100%;
+    }
+</style>
 <body>
-
-<div class="ui middle aligned center aligned middle aligned grid">
-    <div class="ui container" style="margin-top: 5em;">
-        <div class="ui stackable grid centered">
-            <div class="six wide column">
-                    <div class="ui segment blue center aligned">
-                        <div class="ui large header">
-                                Central Authentication Service
+<div class="ui container middle aligned grid">
+    <div class="column">
+        <div class="ui container">
+            <div class="ui stackable grid centered">
+                <div class="six wide column">
+                        <div class="ui segment blue center aligned">
+                            <div class="ui large header">
+                                Central Authentication Service <br/>
                                 <small><a>Universitas Muhammadiyah Sukabumi</a></small>
-                        </div>
-                        <!-- <div class="inline">
-                            <p>Universitas Muhammadiyah Sukabumi</p>
-                        </div> -->
-                    </div>
-            </div>
-        </div>
-        <div class="ui stackable grid centered">
-            <div class="six wide column">
-                <form class="ui form" action="index.html">
-                    <div class="ui segment">
-                        <div class="field">
-                            <label>Nomor Induk Mahasiswa</label>
-                            <div class="ui labeled icon input">
-                                <input type="text" name="email" placeholder="Nomor Induk Mahasiswa" required autofocus>
-                                <i class="user icon"></i>
                             </div>
                         </div>
-                        <div class="field">
-                            <label>Password</label>
-                            <div class="ui labeled icon input">
-                                <input type="password" name="password" placeholder="Password" required>
-                                <i class="lock icon"></i>
+                        <form class="ui form" action="index.html">
+                            <div class="ui segment">
+                                <div class="field">
+                                    <label>Nomor Induk Mahasiswa</label>
+                                    <div class="ui labeled icon input">
+                                        <input type="text" name="email" placeholder="Nomor Induk Mahasiswa" autofocus>
+                                        <i class="user icon"></i>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label>Password</label>
+                                    <div class="ui labeled icon input">
+                                        <input type="password" name="password" placeholder="Password">
+                                        <i class="lock icon"></i>
+                                    </div>
+                                </div>
+                                <div class="ui hidden divider"></div>
+                                <div class="ui hidden divider"></div>
+                                <button type="submit" class="ui fluid blue button"><i class="sign in icon"></i> Masuk</button>
                             </div>
-                        </div>
-                        <button type="submit" class="ui fluid large blue submit button"><i class="sign in icon"></i>Login</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="ui stackable grid centered">
-            <div class="six wide column center aligned">
-                <div class="ui info message">
-                    FAQ Central Authentication Service ( CAS ) <br/><a href="#">Click Here</a>
+                        </form>
                 </div>
             </div>
         </div>

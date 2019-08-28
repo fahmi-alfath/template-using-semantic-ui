@@ -37,85 +37,97 @@
                     </div>
                     <div class="ui grid">
                         <div class="sixteen wide column">
-                            <div class="ui segment center aligned">
+                            <div class="ui segment">
                                     <div class="ui large header">
-                                        Selamat Datang FAHMI ALFATH, di Central Authentication Service ( CAS )
+                                        Selamat Datang FAHMI ALFATH,
                                     </div>
                                     <div class="inline">
-                                        <label>Dari sini anda bisa mengakses berbagai macam website dan sistem tanpa perlu login kembali.</label>
+                                        <label>Di <b>Central Authentication Service ( CAS )</b> anda bisa mengakses berbagai macam website dan sistem tanpa perlu login kembali.</label>
                                     </div>
                             </div>
-                            <div class="ui info icon message">
+                            <!-- <div class="ui info icon message">
                                 <i class="info circle icon"></i>
                                 <i class="close icon"></i>
                                 <div class="content">
                                     <h3 class="header">Kebijakan Situs</h3>
                                     <p>Situs ini menggunakan cookie untuk kemudahan pengguna.</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="ui container">
                     <div class="ui stackable grid">
                         <div class="four wide column">
-                            <div class="ui card centered" data-position="top center" data-content="Menuju Situs SIAK">
+                            <div class="ui fluid card blue" data-position="top center" data-content="Menuju Situs SIAK">
                                     <div class="content" style="text-align: center;margin: 2.5em auto;">
                                         <a href="#">
                                             <i class="graduation cap icon massive"></i>
                                         </a>
                                     </div>
-                                    <a class="ui bottom button attached blue" href="#">
-                                        SIAK MAHASISWA <i class="arrow right icon right floated"></i>
-                                    </a>
+                                    <div class="extra content">
+                                        <a class="ui button blue fluid" href="#">
+                                            SIAK MAHASISWA <i class="arrow right icon right floated"></i>
+                                        </a>
+                                    </div>
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui card centered" data-position="top center" data-content="Menuju Situs Pendaftaran WI-FI">
-                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                                        <a href="#">
-                                            <i class="wifi icon massive"></i>
-                                        </a>
-                                    </div>
-                                    <a class="ui bottom button attached blue" href="#">
+                            <div class="ui fluid card blue" data-position="top center" data-content="Menuju Situs Pendaftaran WI-FI">
+                                <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                    <a href="#">
+                                        <i class="wifi icon massive"></i>
+                                    </a>
+                                </div>
+                                <div class="extra content">
+                                    <a class="ui button blue fluid" href="#">
                                         PENDAFTARAN WI-FI <i class="arrow right icon right floated"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui card centered" data-position="top center" data-content="Menuju Situs Pendaftaran E-Mail">
-                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                                        <a href="webmail/">
-                                            <i class="envelope outline icon massive"></i>
-                                        </a>
-                                    </div>
-                                    <a class="ui bottom button attached blue" href="webmail/">
+                            <div class="ui fluid card blue" data-position="top center" data-content="Menuju Situs Pendaftaran Email">
+                                <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                    <a href="webmail/">
+                                        <i class="envelope outline icon massive"></i>
+                                    </a>
+                                </div>
+                                <div class="extra content">
+                                    <a class="ui button blue fluid" href="webmail">
                                         PENDAFTARAN EMAIL <i class="arrow right icon right floated"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui card centered" data-position="top center" data-content="Menuju Situs Mentoring BTQ">
-                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                                        <a href="#">
-                                            <i class="users icon massive"></i>
-                                        </a>
-                                    </div>
-                                    <a class="ui bottom button attached blue" href="#">
+                            <div class="ui fluid card blue" data-position="top center" data-content="Menuju Situs Mentoring BTQ">
+                                <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                    <a href="#">
+                                        <i class="users icon massive"></i>
+                                    </a>
+                                </div>
+                                <div class="extra content">
+                                    <a class="ui button blue fluid" href="#">
                                         MENTORING BTQ <i class="arrow right icon right floated"></i>
                                     </a>
+                                </div>
                             </div>
                         </div>
                         <div class="four wide column">
-                            <div class="ui card centered" data-position="top center" data-content="Menuju Situs Katalog Buku">
-                                    <div class="content" style="text-align: center;margin: 2.5em auto;">
-                                        <a href="#">
-                                            <i class="book icon massive"></i>
+                            <div class="ui fluid card blue" data-position="top center" data-content="Menuju Situs Katalog Buku">
+                                <div class="content" style="text-align: center;margin: 2.5em auto;">
+                                    <a href="#">
+                                        <i class="book icon massive"></i>
+                                    </a>
+                                </div>
+                                <div class="extra content">
+                                    <div class="ui two buttons">
+                                        <a class="ui button blue" href="#">
+                                            KATALOG BUKU <i class="arrow right icon right floated"></i>
                                         </a>
                                     </div>
-                                    <a class="ui bottom button attached blue" href="#">
-                                        KATALOG BUKU <i class="arrow right icon right floated"></i>
-                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,16 +152,16 @@
                 context: $('body'),
                 transition: 'overlay'
             }).sidebar('attach events', '.sidebar-show');
-            $('.card').each(function()
-            {
-                $(this).popup(
-                {
-                    on        : 'hover',
-                    variation : 'small',
-                    exclusive : true,
-                    content   : $(this).attr('class')
-                });
-            });
+            // $('.card').each(function()
+            // {
+            //     $(this).popup(
+            //     {
+            //         on        : 'hover',
+            //         variation : 'small',
+            //         exclusive : true,
+            //         content   : $(this).attr('class')
+            //     });
+            // });
         });
     </script>
 </body>
